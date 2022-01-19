@@ -1,3 +1,7 @@
+
+
+
+
 let cartData = [{title:"2% BHA Liquid Exfoliant",img:"https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png",price:14, size:"5oz"},
 {title:"2% BHA Liquid Exfoliant",img:"https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png",price:14, size:"5oz"}]
 
@@ -44,3 +48,14 @@ cartData.map(function(elem){
     })
 })
 }
+document.getElementById("coupon-apply").addEventListener("click", ()=>{
+    let code = document.getElementById("coupon-code").value
+    if(code=="masai30"){
+        console.log("good")
+        document.getElementById("coupon").innerText = `coupon code applied(30% off)`
+    }
+    else{
+        document.getElementById("coupon").innerText = `invalid code`
+    }
+})
+
