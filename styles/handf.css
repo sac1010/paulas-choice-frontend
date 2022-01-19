@@ -156,14 +156,14 @@ body{
     margin-top: 2%;
     margin-bottom: 0;
 }
-#dbox1{
+#dboxer1{
     display: flex;
     height: 85%;
     width: 100%;
 }
-.dlft{
+#dlft{
     width: 40%;
-    height: 100%;
+    height: 488px;
     display: flex;
     color: rgb(51,49,51);
     background-color: rgb(232,208,194);
@@ -173,28 +173,28 @@ body{
     height: 100%;
     background-color: rgb(87,87,92);
 }
-#dbox2{
+#dboxer2{
     height: 15%;
     width: 100%;
     display: flex;
     background-color: rgb(51,49,51);
 }
-.dlft>div{
+#dlft>div{
     height: 50%;
     width: 25%;
     margin-top: 2%;
     font-size: 11.5px;
 }
-.dlft>div:nth-child(1){
+#dlft>div:nth-child(1){
     margin-left: 35%;
 }
-.dlft>div:nth-child(1)>p:nth-child(1){
+#dlft>div:nth-child(1)>p:nth-child(1){
     font-weight: 800;
 }
-.dlft>div:nth-child(2)>p{
+#dlft>div:nth-child(2)>p{
     padding-left: 15px;
 }
-.dlft>div:nth-child(2)>p:nth-child(1){
+#dlft>div:nth-child(2)>p:nth-child(1){
     padding-top: 28px;
 }
 #dtp{
@@ -307,12 +307,14 @@ body{
 }
 .dabt{
     flex:1;
+    height: 100%;
     color: snow;
     font-size: 11px;
 }
 .dabt>p{
     padding-left: 50px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .dtrms{
     flex:2;
@@ -333,4 +335,169 @@ body{
 }
 .dtrms>div>p{
     margin-top: 2px;
+}
+#dthrdbr>div:hover .dbox{
+    top: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+.daccount:hover .dbox{
+    top: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+.dbox{
+    margin-left: -35px;
+    margin-top: 95px;
+    position: absolute;
+    background-color: white;
+    height: 300px;
+    width: 74%; 
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dac{
+    width: 20%;
+    height: auto;
+    margin-left: -12%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dac1>p{
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.dac1>p:nth-child(2){
+    margin-top: -10px;
+}
+.dac1 a{
+    text-decoration: none;
+    color: rgb(88,124,148);
+    font-weight: 700;
+}
+.dac2{
+    border-top: 8px solid gainsboro;
+}
+.dac2>div{
+    border-top: 1px solid gainsboro;
+}
+.dac2 p{
+    padding-left: 30px;
+}
+.dac2 p:hover{
+    text-decoration: underline;
+}
+.dcnt{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+}
+.dm{
+    margin-left: 13px;
+    border-left: 1px solid black;
+}
+.dcnt p{
+    padding: 5px;
+    padding-left: 10px;
+}
+.dicns {
+    width: 100%;
+    height: 85px;
+    border-top: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+}
+.dbox1{
+    width: 32%; 
+    font-size: 14px;
+    display: flex;
+}
+.dbox1>div{
+    margin-left: 20px;
+}
+.dbox1 p {
+    padding: 5px;
+    padding-left: 10px;
+}
+.dbox2{
+    width: 33%;
+    height: 385px;
+}
+.dd{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+}
+.dd p{
+    padding: 5px;
+    padding-left: 10px;
+}
+.dd2{
+    height: 50px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+}
+.dd2>a{
+    color: black;
+    text-decoration: none;
+}
+.dd2>a>p{
+    margin-right: 10px;
+}
+.dbox3{
+    width: 31%;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+.dbox3 p{
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.dbox4{
+    width: 35%;
+    margin-left:-27.4% ;
+    display: flex;
+    justify-content: space-around;
+}
+.dbox4 div{
+    width: 180px;
+    height: 265px;
+}
+.dbox4 img{
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+.dbox4 p {
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.dbox5{
+    width: 35%;
+    margin-left:-20.9% ;
+    display: flex;
+    justify-content: space-around;
+}
+.dbox5>div{
+    width: 180px;
+    height: 265px;
+}
+.dbox5 p{
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.dbox5 img{
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+.dhvr>p:hover{
+    text-decoration: underline;
 }

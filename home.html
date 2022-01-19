@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/handf.css">
     <title>Document</title>
 </head>
 <style>
@@ -79,7 +81,7 @@ hr{
     margin: auto;
     height: 100px;
     background-color:#fbf2e7 ;
-    border: 1px solid black;
+    border: 1px solid transparent;
     margin-bottom: 5%;
 }
 #homeDiv9>a{
@@ -93,6 +95,7 @@ hr{
 }
 </style>
 <body>
+    <div id="navbar"></div>
     <div id="homeDisplay">
         <div id="homeDiv1">
             <a href="Products.html"><img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw180ac48d/images/homepage-new/us_211229_desktop_hp-panel_routine-focus.jpg" alt=""></a>
@@ -106,14 +109,14 @@ hr{
         </div>
 
         <div id="category">
-            <a href="cleansers.html"><img src="images\cleansers.png" width="100%" height="100%" alt=""></a>
-            <a href="toners.html"><img src="images\toners.png" width="100%" height="100%" alt=""></a>
-            <a href="exfoliants.html"><img src="images\exfoliants.png" width="100%" height="100%" alt=""></a>
-            <a href="moisturizers.html"><img src="images\moisturizers.png" width="100%" height="100%" alt=""></a>
-            <a href="sunscreen.html"><img src="images\sunscreen.png" width="100%" height="100%" alt=""></a>
-            <a href="acne.html"><img src="images\acne.png" width="100%" height="100%" alt=""></a>
-            <a href="anti_aging.html"><img src="images\antiaging.png" width="100%" height="100%" alt=""></a>
-            <a href="whats_new.html"><img src="images\whatsNew.png" width="100%" height="100%" alt=""></a>
+            <a href="cleansers.html"><img src="images copy/cleansers.png" width="100%" height="100%" alt=""></a>
+            <a href="toners.html"><img src="images copy/toners.png" width="100%" height="100%" alt=""></a>
+            <a href="exfoliants.html"><img src="images copy/exfoliants.png" width="100%" height="100%" alt=""></a>
+            <a href="moisturizers.html"><img src="images copy/moisturizers.png" width="100%" height="100%" alt=""></a>
+            <a href="sunscreen.html"><img src="images copy/sunscreen.png" width="100%" height="100%" alt=""></a>
+            <a href="acne.html"><img src="images copy/acne.png" width="100%" height="100%" alt=""></a>
+            <a href="anti_aging.html"><img src="images copy/antiaging.png" width="100%" height="100%" alt=""></a>
+            <a href="whats_new.html"><img src="images copy/whatsNew.png" width="100%" height="100%" alt=""></a>
             <!-- <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw8d51952d/images/homepage-new/desktoplaunchpad/us_220101_desktop_launchpad.jpg" alt=""> -->
         </div>
 
@@ -143,28 +146,37 @@ hr{
       
 
         <div id="homeDiv7">
-            <a href="quiz.html"><img src="images/Screenshot 2022-01-19 125247.png" alt="" width="100%"  height="100%"></a>
-            <a href="routine.html"><img src="images\Screenshot 2022-01-19 125400.png" alt="" width="100%" height="100%"></a>
+            <a href="quiz.html"><img src="images copy/Screenshot 2022-01-19 125247.png" alt="" width="100%"  height="100%"></a>
+            <a href="routine.html"><img src="images copy/Screenshot 2022-01-19 125400.png" alt="" width="100%" height="100%"></a>
         </div>
 
 
         <div id="homeDiv8">
-            <a href=""><img src="images\beautyBegins.png" alt="" width="100%" height="90%"></a>
+            <a href=""><img src="images copy/beautyBegins.png" alt="" width="100%" height="90%"></a>
             
-            <a href="philo.html"><img src="images\philos.png" alt="" width="100%" height="90%"></a>
-            <a href="recycle.html"><img src="images\recycling.png" alt="" width="100%" height="90%"></a>
+            <a href="philo.html"><img src="images copy/philos.png" alt="" width="100%" height="90%"></a>
+            <a href="recycle.html"><img src="images copy/recycling.png" alt="" width="100%" height="90%"></a>
         </div>
 
 
         <div id="homeDiv9">
-            <a href="handling.html"><p>WE'RE IN TOGETHER. HERE'S HOW WE'RE HANDLING COVID-19  </p></a>
+            <a href="Covid-19.html"><p>WE'RE IN TOGETHER. HERE'S HOW WE'RE HANDLING COVID-19</p></a>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
 
-<script>
-    
+<script type="module">
+
+    import navbar from "./components/dnav.js"
+    import footer from "./components/dfoot.js"
+
+    let nav = document.getElementById("navbar")
+    nav.innerHTML = navbar()
+
+    let foot = document.getElementById("footer")
+    foot.innerHTML = footer()
     function best(){
         console.log("here");
         document.getElementById("best").style.borderBottom = "7px solid black";
