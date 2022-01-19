@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shopping bag</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/cart.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="main">
+      <div id="left">
+        <div class="flex">
+          <div class="title">Shopping Bag <span id="cartNum">1 item</span></div>
+          <img class="mcafee"
+            src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw3b046b8b/mcafee.png"
+            alt=""
+          />
+        </div>
+        <div class="perks"></div>
+        <div class="heading flex">
+            <div class="product">product</div>
+            <div>size</div>
+            <div>quantity</div>
+            <div>Total</div>
+        </div>
+        <hr>
+        <div id="container"></div>
+      </div>
+      <div id="right">
+          <div class="shipping">
+              <div class="bold">Estimate Tax & Shipping</div>
+              <input type="number" placeholder="enter zip" class="zip">
+              <button id="estimate">ESTIMATE</button>
+              <hr>
+              <div class="flex">
+                <div class="bold">subtotal</div>
+                <div id="price">$32</div>
+              </div>
+              <div class="flex">
+                  <div class="bold">shipping</div>
+                  <div>5$</div>
+              </div>
+              <hr>
+              <div class="flex">
+                  <div class="bold">EST. total</div>
+                  <div id="total" class="bold">$47.69</div>
+              </div>
+              <div>Shipping and tax calculated at checkout</div>
+              <button id="checkout">CHECKOUT</button>
+              <div><img class="pay-opt" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw3ae45472/payment-options-us-title_468.png" alt=""></div>
+          </div>
+          <div class="coupon">
+              <div>see promotion details</div>
+              <input type="text" placeholder="Enter Coupon Code" id="coupon-code">
+              <button id="coupon-apply">APPLY</button>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <img class="midImg" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw6e89dd94/images/Cart/us_200415_desktop_cart-cards@2x.png" alt="">
     
-</body>
+    <div id="footer"></div>
+  </body>
 </html>
+<script src="./scripts/cart.js"></script>
