@@ -1,7 +1,7 @@
 
 function footer(){
-    return `<div id="dbox1">
-    <div class="dlft">
+    return ` <div id="dboxer1">
+    <div id="dlft">
         <div>
             <p> OUR COLLECTIONS</p>
             <p>Boosters</p>
@@ -89,7 +89,7 @@ function footer(){
         </div>
     </div>
 </div>
-<div id="dbox2">
+<div id="dboxer2">
     <div class="dabt">
         <p>© Copyright 2021 Paula's Choice.
              All rights reserved.
