@@ -251,10 +251,15 @@
       </div>
     </div>
     <div id="responsiveness">
+      <div id="emptyAlert" class="title">
+        There are no items in your bag at this time.
+      </div>
       <div id="main">
         <div id="left">
           <div class="flex">
-            <div class="title">Shopping Bag <span id="cartNum">0 item</span></div>
+            <div class="title">
+              Shopping Bag <span id="cartNum">0 item</span>
+            </div>
             <img
               class="mcafee"
               src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw3b046b8b/mcafee.png"
@@ -274,8 +279,9 @@
         <div id="right">
           <div class="shipping">
             <div class="bold">Estimate Tax & Shipping</div>
-            <input type="number" placeholder="enter zip" class="zip" />
+            <input type="number" placeholder="enter zip" class="zip" id="zip" />
             <button id="estimate">ESTIMATE</button>
+            <div id="estimateData"></div>
             <hr />
             <div class="flex">
               <div class="bold">subtotal</div>
@@ -283,12 +289,15 @@
             </div>
             <div class="flex">
               <div class="bold">shipping</div>
-              <div>5$</div>
+              <div id="shipping">5$</div>
             </div>
             <hr />
             <div class="flex">
               <div class="bold">EST. total</div>
-              <div id="total" class="bold">$47.69</div>
+              <div class="flex">
+                <div id="total" class="bold">$47.69</div>
+                <div class="bold" id="discounted"></div>
+              </div>
             </div>
             <div>Shipping and tax calculated at checkout</div>
             <button id="checkout">CHECKOUT</button>
@@ -302,12 +311,23 @@
           </div>
           <div class="coupon">
             <div>see promotion details</div>
-            <input type="text" placeholder="Enter Coupon Code" id="coupon-code" />
+            <input
+              type="text"
+              placeholder="Enter Coupon Code"
+              id="coupon-code"
+            />
             <button id="coupon-apply">APPLY</button>
             <div id="coupon"></div>
           </div>
         </div>
       </div>
+      <hr />
+      <div class="flex">
+        <div class="title">Your Saved Items</div>
+        <div class="itemNum">items : <span id="savedItems">0</span></div>
+      </div>
+
+      <div id="saved"></div>
       <hr />
       <img
         class="midImg"
@@ -315,7 +335,6 @@
         alt=""
       />
     </div>
-
 
     <div id="footer">
       <div id="dfooter">

@@ -45,7 +45,7 @@ body {
   font-size: 14px;
 }
 .product {
-  width: 70%;
+  width: 63%;
 }
 .shipping {
   width: 315px;
@@ -118,11 +118,70 @@ body {
   font-weight: bold;
 }
 #container > div > div:nth-child(2) {
-  width: 50%;
+  width: 45%;
 }
+
 select {
   width: 50px;
   height: 30px;
   text-align: center;
   font-size: 17px;
+}
+.bottom{
+  font-size: 13px;
+  margin-top: 20px;
+  display: flex;
+  color: rgb(62, 62, 148);
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+#saved{
+  height: 350px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+#saved>div{
+  width: 250px;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+#saved img{
+  width: 70%;
+  margin: auto;
+}
+#saved button{
+  width: 70%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  margin: auto;
+  border: transparent;
+  border-radius: 7px;
+}
+.removeBtn{
+  text-align: end;
+  margin-right: 20px;
+  color: rgb(155, 155, 155);
+}
+.removeBtn:hover{
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+#emptyAlert{
+  text-align: center;
+  margin-top: 50px;
+}
+.itemNum{
+  font-weight: bold;
+  margin-right: 200px;
+}
+.err::placeholder{
+color: red;
 }
