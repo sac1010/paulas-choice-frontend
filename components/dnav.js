@@ -16,7 +16,7 @@ function navbar(){
         <p><i class="far fa-envelope"></i>Sign-Up for Special Offers</p>
     </div>
     <div class="dpaula">
-        <a href="">
+        <a href="./home.html">
         <h1>PAULA'S CHOICE</h1>
         <h3>SKINCARE</h3>
     </a>
@@ -33,7 +33,7 @@ function navbar(){
         <div class="dbox dac">
             <div class="dac1">
                 <p>HELLO <strong>BEAUTIFUL</strong>/<strong>HANDSOME</strong>,</p>
-                <p><a href="">Login</a> or <a href="">Sign Up</a></p>
+                <p><span id="dlog">Login</span> or <span id="dsign">Sign Up</span></p>
             </div>
             <div class="dac2">
                 <div>

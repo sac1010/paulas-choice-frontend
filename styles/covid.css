@@ -31,7 +31,10 @@
 span{
     color: rgb(114, 171, 214);
 }
-img{
+#psign{
     margin-left: 30px;
     margin-bottom: 70px;
+}
+#dthrdbr{
+    z-index: 1000;
 }

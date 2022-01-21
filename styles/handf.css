@@ -42,7 +42,7 @@ body{
     color: black                        ;
 }
 .dpaula{
-    margin-left: 21%;
+    margin-left: 260px;
 }
 .dpaula>a{
     text-decoration: none;
@@ -51,7 +51,7 @@ body{
 .dpaula>a>h1{
     font-size: 28px;
     letter-spacing: 3px;
-    padding-top: 5px;
+    padding-top: 20px;
 }
 .dpaula>a>h3{
     text-align: center;
@@ -371,8 +371,7 @@ body{
 .dac1>p:nth-child(2){
     margin-top: -10px;
 }
-.dac1 a{
-    text-decoration: none;
+.dac1 span{
     color: rgb(88,124,148);
     font-weight: 700;
 }

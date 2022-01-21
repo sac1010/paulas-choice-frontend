@@ -77,7 +77,7 @@
         <p class="bld1">
             Wishing you great health and loving support from all of us here at Paula’s Choice Skincare.
         </p>
-        <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd48e7935/images/paula-sig.png" alt="">
+        <img id="psign" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd48e7935/images/paula-sig.png" alt="">
     </div>
     <div id="footer"></div>
 </body>
@@ -92,5 +92,10 @@
 
     let foot = document.getElementById("footer")
     foot.innerHTML = footer()
+    let y = JSON.parse(localStorage.getItem("name"))
+    
+
+    let user = document.getElementById("user")
+    user.innerText = y;
 
 </script>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/handf.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <title>Shop Paula's Choice</title>
 </head>
 <style>
@@ -96,6 +97,78 @@ hr{
 </style>
 <body>
     <div id="navbar"></div>
+    <div id="signModal" class="modal">
+        <div class="modal1">
+            <span id="dclse"><i class="fas fa-times" id="cross1"></i></span>
+            <h1><Strong>Create Account</Strong></h1>
+            <div id="ib">
+                <p>Email</p>
+                <input type="text" id="dmail">
+            </div>
+            <div id="ib1">
+                <p>First Name</p>
+                <input type="text" id="dsfname">
+            </div>
+            <div id="ib2">
+                <p>Last Name</p>
+                <input type="text" id="dlname">
+            </div>
+            <div id="ib3">
+                <p>Password</p>
+                <input type="password" id="dspass">
+            </div>
+            <div id="ib4">
+                <h2>Create Account</h2>
+            </div>
+            <div id="or">
+                <p><span>or</span></p>
+            </div>
+            <div id="ib5">
+                <a href="">
+                    <h2>SIGN IN</h2>
+                </a>
+            </div>
+            <div id="or">
+                <p><span>or</span></p>
+            </div>
+            <div id="ib6">
+                <a href="">
+                    <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+                </a>
+            </div>
+        </div>
+      </div>
+      <div id="logModal" class="modal">
+        <div id="modal2">
+            <span id="dclse"><i class="fas fa-times" id="cross"></i></span>
+            <h1><Strong>Sign In</Strong></h1>
+            <div id="iib">
+                <p>Email</p>
+                <input type="text" id="dumail" required>
+            </div>
+                <div id="iib1">
+                    <p>Password</p>
+                    <input type="password" id="dupass" >
+                </div>
+                <div id="iib4">
+                    <h2>Sign In</h2>
+                </div>
+                <div id="or">
+                    <p><span>or</span></p>
+                </div>
+                <div id="iib2">
+                    <h2>Create Account</h2>
+                </div>
+                <div id="or">
+                    <p><span>or</span></p>
+                </div>
+                <div id="ib6">
+                    <a href="">
+                        <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+                    </a>
+                </div>
+        </div>
+      </div>
     <div id="homeDisplay">
         <div id="homeDiv1">
             <a href="Products.html"><img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw180ac48d/images/homepage-new/us_211229_desktop_hp-panel_routine-focus.jpg" alt=""></a>
@@ -191,4 +264,86 @@ hr{
         console.log("here");
         document.getElementById("kits").style.borderBottom = "7px solid black";
     }
+    let mod = document.getElementById("signModal")
+    let sign = document.getElementById("dsign")
+
+    let log = document.getElementById("dlog")
+    let mod2 = document.getElementById("logModal")
+    let close = document.getElementById("cross")
+    let close1 = document.getElementById("cross1")
+
+    sign.onclick = () =>{
+        mod.style.visibility = "visible"
+    }
+    window.onclick= (event) => {
+        if(event.target == mod || event.target == mod2){
+            mod.style.visibility = "hidden"
+            mod2.style.visibility = "hidden"
+        }
+    }
+    log.onclick = ()=>{
+        mod2.style.visibility = "visible"
+    }
+    close.onclick = ()=> {
+        console.log("magic")
+       mod2.style.visibility = "hidden"
+       
+    }
+    close1.onclick = ()=> {
+       mod.style.visibility = "hidden"
+       
+    }
+    let create = document.getElementById("ib4")
+    create.onclick = function(){
+        registerData()
+        mod.style.visibility = "hidden"
+        mod2.style.visibility = "visible"
+    }
+
+    var arr = JSON.parse(localStorage.getItem("userdata")) || []
+    function registerData(){
+        event.preventDefault()
+        var name = document.querySelector("#dsfname").value
+        var email = document.querySelector("#dmail").value
+        var password = document.querySelector("#dspass").value
+
+        var obj = {
+            username : name,
+            usermail : email,
+            userpass : password,
+        }
+        arr.push(obj)
+        console.log(arr)
+        localStorage.setItem("userdata",JSON.stringify(arr))
+    }
+   
+    let login = document.getElementById("iib4")
+    login.onclick = function(){
+        loginData()
+    }
+
+    var loginarr = JSON.parse(localStorage.getItem("userdata")) || []
+    function loginData(){
+        var id = document.querySelector("#dumail").value
+        var pass = document.querySelector("#dupass").value
+        for(var i = 0; i<loginarr.length; i++){
+            console.log("111")
+            if(loginarr[i].usermail == id && loginarr[i].userpass == pass){
+                alert("logged Successfully")
+                let a = loginarr[i].username
+                var x = localStorage.setItem("name",JSON.stringify(a))
+                let z = JSON.parse(localStorage.getItem("name"))
+                let user = document.getElementById("user")
+                user.innerText = z
+                mod2.style.visibility = "hidden"
+            }  
+        }
+        // let z = JSON.parse(localStorage.getItem("name"))
+        // let user = document.getElementById("user")
+        // user.innerText = z
+    }
+        let b = JSON.parse(localStorage.getItem("name")) || []
+        let user = document.getElementById("user")
+        user.innerText = b
+    
 </script>

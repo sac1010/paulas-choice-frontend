@@ -33,7 +33,10 @@
     let dft = document.getElementById("dfooter")
     dft.innerHTML = footer()
 
+    let y = JSON.parse(localStorage.getItem("name"))
+    
 
-
+    let user = document.getElementById("user")
+    user.innerText = y;
 
 </script>
