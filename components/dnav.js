@@ -111,8 +111,16 @@ function navbar(){
                 </div>
             </div>
             <div class="dicns">
-
-
+                <div id = "whticns">
+                <h3><i class="far fa-star"></i>WHAT'S NEW</h3>
+                <h3><i class="fas fa-medal"></i>BEST SELLER'S</h3>
+                <h3><i class="fas fa-air-freshener"></i>KITS & SETS</h3>
+                <h3><i class="fas fa-tint"></i>MINI SIZES</h3>
+                <h3><i class="fas fa-bookmark"></i>SALE</h3>
+                </div>
+                <div id = "shopnow">
+                <h3>SHOP ALL PRODUCTS ></h3>
+                </div>
             </div>   
         </div>
     </div>
