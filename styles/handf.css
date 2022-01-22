@@ -500,3 +500,14 @@ body{
 .dhvr>p:hover{
     text-decoration: underline;
 }
+#whticns{
+    display:flex;
+    width: 92%;
+    height: 40px;
+    margin: auto;
+    justify-content: space-between;
+}
+#shopnow>h3{
+    text-align: end;
+    padding-right: 10px;
+}
