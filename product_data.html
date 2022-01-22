@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="product_data.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="Anavbar"><p>navbar</p></div>
+    <div id="Acontainer">
+        <div id="Ahome"><i class="fa badge" style="font-size:29px" value="Best Seller">&#xf07a;</i></div>
+        <div id="Adowncont">
+            <div id="Afilter">
+                <p id="Afit">Filter By</p>
+                <p id="Aopt">CATEGORY</p>
+                <div><input class="AHA" id="Acheckbox" type="checkbox"><label>AHA & BHA Exfoliants (33)</label></div>
+                <div><input class="Aresist" id="Acheckbox" type="checkbox"  onclick="Aresist()"><label>Resist (6)</label></div>
+                <div><input class="ASerums" id="Acheckbox" type="checkbox"><label>Antioxidant Serums (5)</label></div>
+                <div><input class="Amens" id="Acheckbox" type="checkbox" onclick="Amens()"><label>Men's (2)</label></div>
+                <div><input class="Aearth" id="Acheckbox" type="checkbox" onclick="Aearth()"><label>Earth Sourced (2)</label></div>
+                <div><input class="Abodycare" id="Acheckbox" type="checkbox" onclick="Abodycare()"><label>Body Care (3)</label></div>
+                
+                <p id="Aopt">SKIN CONCERN</p>
+                <div><input class="Acne" id="Acheckbox" type="checkbox"><label>Acne Breakouts (6)</label></div>
+                <div><input class="Anti-Aging" id="Acheckbox" type="checkbox"><label>Anti-Aging (35)</label></div>
+                <div><input class="Arecovery" id="Acheckbox" type="checkbox" onclick="Askinrec()"><label>Skin Recovery (4)</label></div>
+                <div><input class="Askinperfecting" id="Acheckbox" type="checkbox" onclick="Askinperfecting()"><label>Skin Perfecting (2)</label></div>
+                <div><input class="Ablumpy" id="Acheckbox" type="checkbox"><label>Blumpy Skin (16)</label></div>
+
+                <p id="Aopt">COLLECTION</p>
+                <div><input class="Aboosters" id="Acheckbox" type="checkbox"><label>Boosters (8)</label></div>
+                <div><input class="Acalm" id="Acheckbox" type="checkbox" onclick="Acalm()"><label>Calm Redness Relief (5)</label></div>
+                <div><input class="Aclear" id="Acheckbox" type="checkbox" onclick="Aclear()"><label>Clear for Acne (1)</label></div>
+                <div><input class="Aclinical" id="Acheckbox" type="checkbox" onclick="Aclinical()"><label>Clinical (4)</label></div>
+                <div><input class="Adefense" id="Acheckbox" type="checkbox" onclick="Adefense()"><label>Defense (2)</label></div>
+
+                <p id="Aopt">SKIN TYPE</p>
+                <div><input class="Allskin" id="Acheckbox" type="checkbox"><label>All Skin Types (37)</label></div>
+                <div><input class="Acombo" id="Acheckbox" type="checkbox"><label>Combination Skin (46)</label></div>
+                <div><input class="Adry" id="Acheckbox" type="checkbox"><label>Dry/Very Dry Skin (47)</label></div>
+                <div><input class="Asensetive" id="Acheckbox" type="checkbox"><label>Extra Sensitive Skin (11)</label></div>
+                <div><input class="Anormal" id="Acheckbox" type="checkbox"><label>Normal Skin (51)</label></div>
+
+            </div>
+            <div id="Aproductout">
+                <div id=Ahead>
+                    <h1 id="Aname">Dull Skin</h1>
+                    <div id="Asort">
+                        <p>Sort by:</p>
+                        <select id="Aselect" onchange="Asortfunt()">
+                            <option value="best">Best Sellers</option>
+                            <option value="top">Top Rated</option>
+                            <option value="most">Most Relevant</option>
+                        </select>
+                    </div>
+                </div>
+                    <div id="Aproductin">
+                    <div id="Amainpro"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="product_data.js"></script>

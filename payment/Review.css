@@ -1,0 +1,79 @@
+body{
+     
+    font-family: proxima-nova, sans-serif;
+    background-color: ghostwhite;
+    height: 100%;
+}
+#Rhead{
+    text-align: center;
+    line-height: 5px;
+    width: 100%;
+     
+}
+#Rhead>a>h2{
+    letter-spacing: 2.5px;
+}
+#Rhead :hover {
+    cursor: pointer;
+}
+h4{
+    letter-spacing: 7px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#steps {
+    width: 70%;
+    display: flex;
+    font-weight: bold;
+    margin: auto;
+     
+}
+#steps>hr {
+    transform: rotate(90deg);
+    height: 100px;
+    width: 0;
+     
+}
+#cl {
+    border: 1px solid transparent;
+    border-radius:50%;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+#secCl {
+     
+    border-radius:50%;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: lavender;
+    color: white;
+
+}
+#mHead {
+    width: 90%;
+    height: 150px;
+    border: 1px solid black;
+    margin: auto;
+}
+#Rcont{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black ;
+     
+}

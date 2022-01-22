@@ -1,0 +1,125 @@
+body{
+    font-family: proxima-nova, sans-serif;
+    color:#333133;
+}
+#Anavbar{
+    width:100%;
+    height:200px;
+    /* border:1px solid green; */
+}
+#Acontainer{
+    width:100%;
+    /* border:1px solid black; */
+}
+#Ahome{
+    width:100%;
+    height:5%;
+    /* border:1px solid black; */
+}
+#Adowncont{
+    width:100%;
+    height:1200px;
+    display: flex;
+    margin-top: 4%;
+    /* border:1px solid red; */
+}
+#Afilter{
+    width:17%;
+    margin-left: 1%;
+    height:1000px;
+    /* border:1px solid black; */
+}
+#Aproductout{
+    width:83%;
+    height:1000px;
+    /* border:1px solid black; */
+}
+#Ahead{
+    width:100%;
+    height:6%;
+    border-bottom:1px solid black;
+    display: flex;
+}
+#Aproductin{
+    width:100%;
+    height:95%;
+    /* border:1px solid black; */
+}
+#Aopt{
+    font-size: 13px;
+    margin-bottom: 1px;
+    margin-top: 26px;
+}
+label{
+    font-size: 11px;
+    line-height: 25px;
+    font-weight: 500;
+    color:#332e32;
+}
+#Acheckbox{
+    margin-left: 10px;
+}
+#Afit{
+    font-size: 15px;
+    font-weight: 700;
+}
+#Amainpro{
+    width:74%;
+    height:1000px;
+    /* border:1px solid black; */
+    margin-top:6%;
+    margin-left:13%;
+    margin-right:13%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5%;
+}
+.badge:after{
+    content:attr(value);
+    font-size:9px;
+    background: #333133;
+    border-radius:50%;
+    padding: right 2px;
+    padding-left:2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position:relative;
+    left:-8px;
+    top:-10px;
+    color:white;
+    /* flex-wrap: wrap; */
+    /* opacity:0.9; */
+    }
+    #Asort{
+        display: flex;
+        margin-left: 63%;
+        font-size: 14px;
+    }
+    #Aselect{
+        height:47px;
+        padding-left: 22px;
+        padding-right:40px;
+        margin-left:6px;
+        border-radius: 5px;
+    }
+    #Aname{
+        margin-top: 0px;
+    }
+    #Aselect:focus{
+        border:3px solid black;
+    }
+    
+
+    @media only screen and (min-width:375px) and (max-width:820px){
+        #Amainpro{
+            width:74%;
+            height:1000px;
+            /* border:1px solid black; */
+            margin-top:6%;
+            margin-left:13%;
+            margin-right:13%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:5%;
+        }
+    }
