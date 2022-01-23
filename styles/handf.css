@@ -61,7 +61,7 @@ a:hover{
     color: black                        ;
 }
 .dpaula{
-    margin-left: 270px;
+    margin-left: 330px;
     font-size: 14px;
 }
 .dpaula>a{
@@ -131,7 +131,7 @@ a:hover{
     font-size: large;
     margin-top: 27px;
     color: rgb(87,87,92);
-}
+}                                              
 .daccount>a{
     color: rgb(87,87,92);
     margin-top: 17px;
@@ -207,7 +207,7 @@ a:hover{
 }
 .drgt{
     width: 60%;
-    height: 100%;
+    height:520px ;
     display: block;
     /* margin-top: 70%; */
     background-color: rgb(87,87,92);
