@@ -142,8 +142,8 @@ select {
   cursor: pointer;
 }
 #saved {
-  height: 350px;
-  /* maxHeight: 350px; */
+  /* height: 350px; */
+  max-height: 450px;
   width: 100%;
   display: flex;
   gap: 60px;

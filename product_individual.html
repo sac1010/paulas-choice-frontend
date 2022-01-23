@@ -4,12 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="product_individual.css">
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+    <title>Shop Paula's Choice</title>
+    <link rel="stylesheet" href="./styles/handf.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/handf(sac).css">
+    <link rel="stylesheet" href="./styles/product_individual.css">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    #dboxer1{
+    display: flex;
+    /* margin-top: 360%; */
+    height: 85%;
+    width: 100%;
+}
+</style>
 <body>
     <div id="Ancontainer">
-        <p  id="Ahome"></p>
+        <div  id="Anavbar"></div>
+        <div id="signModal" class="modal">
+            <div class="modal1">
+                <span id="dclse"><i class="fas fa-times" id="cross1"></i></span>
+                <h1><Strong>Create Account</Strong></h1>
+                <div id="ib">
+                    <p>Email</p>
+                    <input type="text" id="dmail">
+                </div>
+                <div id="ib1">
+                    <p>First Name</p>
+                    <input type="text" id="dsfname">
+                </div>
+                <div id="ib2">
+                    <p>Last Name</p>
+                    <input type="text" id="dlname">
+                </div>
+                <div id="ib3">
+                    <p>Password</p>
+                    <input type="password" id="dspass">
+                </div>
+                <div id="ib4">
+                    <h2>Create Account</h2>
+                </div>
+                <div id="or">
+                    <p><span>or</span></p>
+                </div>
+                <div id="ib5">
+                    <a href="">
+                        <h2>SIGN IN</h2>
+                    </a>
+                </div>
+                <div id="or">
+                    <p><span>or</span></p>
+                </div>
+                <div id="ib6">
+                    <a href="">
+                        <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div id="logModal" class="modal">
+            <div id="modal2">
+                <span id="dclse"><i class="fas fa-times" id="cross"></i></span>
+                <h1><Strong>Sign In</Strong></h1>
+                <div id="iib">
+                    <p>Email</p>
+                    <input type="text" id="dumail" required>
+                </div>
+                    <div id="iib1">
+                        <p>Password</p>
+                        <input type="password" id="dupass" >
+                    </div>
+                    <div id="iib4">
+                        <h2>Sign In</h2>
+                    </div>
+                    <div id="or">
+                        <p><span>or</span></p>
+                    </div>
+                    <div id="iib2">
+                        <h2>Create Account</h2>
+                    </div>
+                    <div id="or">
+                        <p><span>or</span></p>
+                    </div>
+                    <div id="ib6">
+                        <a href="">
+                            <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+                        </a>
+                    </div>
+            </div>
+          </div>
 <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOcJ9HokqTrGA02Uf-BkOQGOKX_rcN1FaPfhhHmY1PnWElmdKFZ3_RKgb5eKfsPzwMyI&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOcJ9HokqTrGA02Uf-BkOQGOKX_rcN1FaPfhhHmY1PnWElmdKFZ3_RKgb5eKfsPzwMyI&usqp=CAUhttps://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAzUVY8TTzhVG2i_qQzCaKv1EyHDRnQ2L4kQZIpO5PYPKNas0Y"> -->
         <!-- product image and details part starts here -->
 
@@ -664,8 +750,125 @@
         </div>
         <div id="meraman"></div>
     </div>
-
+    <div id="footer"></div>
 
 </body>
 </html>
-<script src="product_individual.js"></script> 
+<script src="./components/product_individual.js"></script> 
+
+<script type="module">
+    import navbar from "./components/dnav.js"
+        import footer from "./components/dfoot.js"
+        let nav = document.getElementById("Anavbar")
+        nav.innerHTML = navbar()
+    
+        let foot = document.getElementById("footer")
+        foot.innerHTML = footer()
+
+
+        let mod = document.getElementById("signModal")
+    let sign = document.getElementById("dsign")
+
+    let log = document.getElementById("dlog")
+    let mod2 = document.getElementById("logModal")
+    let close = document.getElementById("cross")
+    let close1 = document.getElementById("cross1")
+
+    sign.onclick = () =>{
+        mod.style.visibility = "visible"
+    }
+    window.onclick= (event) => {
+        if(event.target == mod || event.target == mod2){
+            mod.style.visibility = "hidden"
+            mod2.style.visibility = "hidden"
+        }
+    }
+    log.onclick = ()=>{
+        mod2.style.visibility = "visible"
+    }
+    close.onclick = ()=> {
+        console.log("magic")
+       mod2.style.visibility = "hidden"
+       
+    }
+    close1.onclick = ()=> {
+       mod.style.visibility = "hidden"
+       
+    }
+    let create = document.getElementById("ib4")
+    create.onclick = function(){
+        registerData()
+        mod.style.visibility = "hidden"
+        mod2.style.visibility = "visible"
+    }
+
+    var arr = JSON.parse(localStorage.getItem("userdata")) || []
+    function registerData(){
+        event.preventDefault()
+        var name = document.querySelector("#dsfname").value
+        var email = document.querySelector("#dmail").value
+        var password = document.querySelector("#dspass").value
+
+        var obj = {
+            username : name,
+            usermail : email,
+            userpass : password,
+        }
+        arr.push(obj)
+        console.log(arr)
+        localStorage.setItem("userdata",JSON.stringify(arr))
+    }
+   
+    let login = document.getElementById("iib4")
+    login.onclick = function(){
+        loginData()
+    }
+
+    var loginarr = JSON.parse(localStorage.getItem("userdata")) || []
+    function loginData(){
+        var id = document.querySelector("#dumail").value
+        var pass = document.querySelector("#dupass").value
+        for(var i = 0; i<loginarr.length; i++){
+            console.log("111")
+            if(loginarr[i].usermail == id && loginarr[i].userpass == pass){
+                alert("logged Successfully")
+                let a = loginarr[i].username
+                var x = localStorage.setItem("name",JSON.stringify(a))
+                let z = JSON.parse(localStorage.getItem("name"))
+                let user = document.getElementById("user")
+                user.innerText = z
+                mod2.style.visibility = "hidden"
+            }  
+        }
+    }
+        let b = JSON.parse(localStorage.getItem("name")) || []
+        let user = document.getElementById("user")
+        user.innerText = b
+
+
+
+        var accordions = document.getElementsByClassName("accordion");
+
+
+
+        
+
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function() {
+    this.classList.toggle('is-open');
+
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      // accordion is currently open, so close it
+      content.style.maxHeight = null;
+    } else {
+      // accordion is currently closed, so open it
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log("hello")
+    }
+  }
+}
+
+let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+ document.getElementById("dcount").innerText = cartData.length
+    </script>
