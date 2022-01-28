@@ -42,7 +42,9 @@
     color: black                        ;
 }
 .dpaula{
-    margin-left: 25%;
+    margin-left: 260px;
+    /* border:1px solid black; */
+    font-size: 14px;
 }
 .dpaula>a{
     text-decoration: none;
@@ -59,14 +61,14 @@
     letter-spacing:8px;
     font-size: 15px;
 }
-.dsearch{
-    margin-left: 3%;
+/* .dsearch{
+    margin-left: 9%;
     width: 200px;
     height: 30%;
     border: 2px solid rgb(213,216,220);
     margin-top: 35px;
     border-radius: 20px;
-}
+} */
 .dsearch>input{
     width: 75%;
     height: 85%;
