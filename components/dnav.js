@@ -16,7 +16,7 @@ function navbar(){
         <p><i class="far fa-envelope"></i>Sign-Up for Special Offers</p>
     </div>
     <div class="dmenu">
-        <p><i style="font-size:22px;margin-left:4px" class="fas fa-hamburger"></i>MENU</p>
+        <p><i style="font-size:22px;margin-left:1px" class="fas fa-hamburger"></i>MENU</p>
     </div>
     <div class="dsearch1">
         <input type="text" id="dsrch1" placeholder="Search">
