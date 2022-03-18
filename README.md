@@ -1,6 +1,6 @@
 # unit-3-construct-week
 # Paula's Choice
-This is clone of Paula's Choice website
+<p>This is clone of Paula's Choice website
 We have made this project in a time span of 5 days in construct week
 The homepage has much to explore as it can direct to skin care routine page.
 It also has Paula's choice philosophy and also have guidelines on how to handle covid.
@@ -17,3 +17,4 @@ Once the process is done the user can return back to the homepage and explore mo
 
 We are delighted to work on this project and are looking forward to work on more such projects in future.
 
+</p>
